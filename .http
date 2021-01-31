@@ -1,0 +1,34 @@
+GET http://localhost:8000
+
+###
+POST http://localhost:8000/books
+content-type: application/json
+
+{
+    "title": "Sastri JI",
+    "author": "Vishwakarma"
+}
+
+###
+POST http://localhost:8000/author
+content-type: application/json
+
+{
+    "author": "Vishwakarma"
+}
+
+###
+POST http://localhost:8000/search
+content-type: application/json
+
+{
+    "id": "72f4471d-2d26-4f6c-b7b0-7f1430f02280"
+}
+
+###
+POST http://localhost:8000/delete
+content-type: application/json
+
+{
+    "id": "72f4471d-2d26-4f6c-b7b0-7f1430f02280"
+}
